@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "nombre": "Polera Básica Algodón",
+    "categoria": "poleras",
+    "precio": 9990,
+    "stock": 24,
+    "imagen": "https://placehold.co/300x300/2f4538/f4efe1?text=Polera",
+    "descripcion": "Polera 100% algodón, corte clásico. Ideal para el uso diario, disponible en varios colores en nuestra tienda física."
+  },
+  {
+    "id": 2,
+    "nombre": "Polera Estampada Barrio",
+    "categoria": "poleras",
+    "precio": 12990,
+    "stock": 15,
+    "imagen": "https://placehold.co/300x300/2f4538/f4efe1?text=Polera+2",
+    "descripcion": "Polera con estampado exclusivo diseñado por artistas locales del barrio."
+  },
+  {
+    "id": 3,
+    "nombre": "Jeans Slim Fit",
+    "categoria": "jeans",
+    "precio": 24990,
+    "stock": 10,
+    "imagen": "https://placehold.co/300x300/2f4538/f4efe1?text=Jeans",
+    "descripcion": "Jeans de corte slim, tela resistente con un 2% de elastano para mayor comodidad."
+  },
+  {
+    "id": 4,
+    "nombre": "Jeans Clásico Recto",
+    "categoria": "jeans",
+    "precio": 22990,
+    "stock": 18,
+    "imagen": "https://placehold.co/300x300/2f4538/f4efe1?text=Jeans+2",
+    "descripcion": "El jeans de toda la vida: corte recto, tiro medio, para cualquier ocasión."
+  },
+  {
+    "id": 5,
+    "nombre": "Chaqueta de Invierno",
+    "categoria": "chaquetas",
+    "precio": 39990,
+    "stock": 6,
+    "imagen": "https://placehold.co/300x300/2f4538/f4efe1?text=Chaqueta",
+    "descripcion": "Chaqueta acolchada, ideal para los días fríos de la nueva colección Invierno 2026."
+  },
+  {
+    "id": 6,
+    "nombre": "Chaqueta de Cuero Sintético",
+    "categoria": "chaquetas",
+    "precio": 45990,
+    "stock": 4,
+    "imagen": "https://placehold.co/300x300/2f4538/f4efe1?text=Chaqueta+2",
+    "descripcion": "Chaqueta estilo motociclista, material sintético cruelty-free, forro interior suave."
+  },
+  {
+    "id": 7,
+    "nombre": "Zapatillas Urbanas",
+    "categoria": "calzado",
+    "precio": 34990,
+    "stock": 12,
+    "imagen": "https://placehold.co/300x300/2f4538/f4efe1?text=Zapatillas",
+    "descripcion": "Zapatillas cómodas para el día a día, suela de goma antideslizante."
+  },
+  {
+    "id": 8,
+    "nombre": "Botines de Cuero",
+    "categoria": "calzado",
+    "precio": 42990,
+    "stock": 8,
+    "imagen": "https://placehold.co/300x300/2f4538/f4efe1?text=Botines",
+    "descripcion": "Botines de cuero genuino, perfectos para combinar con jeans o chaquetas."
+  }
+]

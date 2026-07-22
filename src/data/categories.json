@@ -1,0 +1,6 @@
+[
+  { "id": "poleras", "nombre": "Poleras", "icono": "👕" },
+  { "id": "jeans", "nombre": "Jeans", "icono": "👖" },
+  { "id": "chaquetas", "nombre": "Chaquetas", "icono": "🧥" },
+  { "id": "calzado", "nombre": "Calzado", "icono": "👟" }
+]

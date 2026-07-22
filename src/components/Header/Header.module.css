@@ -1,0 +1,94 @@
+/* =============================================================================
+   Header.module.css
+   -----------------------------------------------------------------------------
+   ¿Qué es un "CSS Module"?
+   Es un archivo CSS normal, PERO con una regla especial: al terminar en
+   ".module.css", Vite transforma cada nombre de clase (ej: .header) en un
+   nombre único al compilar (ej: "Header_header_a1b2c").
+
+   ¿Para qué sirve esto?
+   Evita que los estilos de un componente choquen por accidente con los de
+   otro. Por ejemplo, si tanto Header como Footer tuvieran una clase llamada
+   ".contenido", en CSS normal el segundo pisaría al primero. Con CSS
+   Modules, cada componente vive en su "burbuja" de estilos aislada.
+
+   Por eso en el .tsx importamos así:
+       import styles from "./Header.module.css";
+   Y usamos las clases como: className={styles.header}
+   ========================================================================== */
+
+.header {
+  background-color: var(--color-verde-bosque);
+  color: var(--color-superficie);
+  /* La costura (línea punteada) marca la transición hacia el contenido,
+     como si fuera el borde cosido de una prenda. */
+  border-bottom: 3px dashed var(--color-ocre);
+}
+
+.contenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--espacio-md);
+  padding-top: var(--espacio-md);
+  padding-bottom: var(--espacio-md);
+  flex-wrap: wrap;
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-sm);
+}
+
+.logo {
+  font-size: 1.8rem;
+}
+
+.nombreTienda {
+  font-family: var(--fuente-titulos);
+  font-size: 1.4rem;
+  color: var(--color-superficie);
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.eslogan {
+  font-family: var(--fuente-texto);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-ocre-suave);
+}
+
+.navegacion {
+  display: flex;
+  gap: var(--espacio-md);
+}
+
+.enlace {
+  font-weight: 600;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.enlace:hover {
+  border-color: var(--color-ocre);
+  color: var(--color-ocre-suave);
+}
+
+.carrito {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-xs);
+  background-color: var(--color-verde-oscuro);
+  padding: var(--espacio-xs) var(--espacio-sm);
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.contadorCarrito {
+  color: var(--color-ocre-suave);
+}

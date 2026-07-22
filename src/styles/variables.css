@@ -1,0 +1,52 @@
+/* =============================================================================
+   variables.css
+   -----------------------------------------------------------------------------
+   Aquí definimos "variables CSS" (custom properties). Son valores reutilizables
+   (colores, tipografías, espaciados) que usamos en TODA la aplicación.
+
+   ¿Por qué usar variables en vez de escribir el color directamente en cada
+   archivo? Si mañana queremos cambiar el color principal de la tienda, lo
+   cambiamos UNA vez aquí y se actualiza en todos los componentes.
+
+   Concepto de diseño elegido para "Moda Local":
+   Una tienda de barrio evoca mercados, toldos de tela, y ropa cosida a mano.
+   Por eso el acento no es un color de "startup" sino un mostaza/ocre cálido
+   (como el de un toldo de feria) combinado con un verde bosque profundo
+   (como la vitrina de una tienda de ropa clásica) sobre un fondo pergamino.
+   El detalle de "costura" (línea punteada) que verás en varios componentes
+   hace referencia directa a la ropa: una costura.
+   ========================================================================== */
+
+:root {
+  /* ---- Paleta de colores ------------------------------------------------ */
+  --color-fondo: #efe6d3;         /* Fondo general: papel/pergamino cálido */
+  --color-superficie: #fbf7ec;     /* Fondo de tarjetas, un poco más claro */
+  --color-verde-bosque: #26433a;   /* Color principal: verde bosque profundo */
+  --color-verde-oscuro: #182d26;   /* Variante más oscura (hover, footer) */
+  --color-ocre: #c8932b;           /* Acento cálido: mostaza/ocre (toldo) */
+  --color-ocre-suave: #e4b45c;     /* Variante clara del ocre */
+  --color-texto: #241f16;          /* Texto principal, casi negro cálido */
+  --color-texto-suave: #5a5346;    /* Texto secundario/gris cálido */
+  --color-borde: #d8cbaa;          /* Bordes sutiles */
+  --color-error: #a4342a;          /* Rojo ladrillo para errores/alertas */
+
+  /* ---- Tipografía --------------------------------------------------------
+     No dependemos de fuentes externas por internet (la app debe funcionar
+     sin conexión), por eso usamos "pilas" (stacks) de fuentes ya instaladas
+     en cada sistema operativo, elegidas para que se acerquen a la
+     personalidad que buscamos. */
+  --fuente-titulos: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+  --fuente-texto: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", sans-serif;
+
+  /* ---- Espaciados (escala consistente) ---------------------------------- */
+  --espacio-xs: 0.4rem;
+  --espacio-sm: 0.8rem;
+  --espacio-md: 1.6rem;
+  --espacio-lg: 2.4rem;
+  --espacio-xl: 4rem;
+
+  /* ---- Bordes y sombra ---------------------------------------------------*/
+  --radio-borde: 6px;
+  --sombra-suave: 0 2px 10px rgba(36, 31, 22, 0.08);
+  --sombra-media: 0 6px 20px rgba(36, 31, 22, 0.14);
+}

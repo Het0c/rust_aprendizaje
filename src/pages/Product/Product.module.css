@@ -1,0 +1,65 @@
+.volver {
+  display: inline-block;
+  margin: var(--espacio-md) 0;
+  font-weight: 600;
+  color: var(--color-verde-bosque);
+}
+
+.detalle {
+  display: grid;
+  grid-template-columns: minmax(240px, 380px) 1fr;
+  gap: var(--espacio-xl);
+  padding-bottom: var(--espacio-xl);
+}
+
+.imagen {
+  width: 100%;
+  border-radius: var(--radio-borde);
+  border: 2px dashed var(--color-ocre);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-sm);
+}
+
+.precio {
+  color: var(--color-ocre);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.descripcion {
+  color: var(--color-texto-suave);
+  max-width: 60ch;
+}
+
+.stock {
+  font-size: 0.9rem;
+  color: var(--color-texto-suave);
+}
+
+.botonAgregar {
+  align-self: flex-start;
+  background-color: var(--color-ocre);
+  padding: var(--espacio-sm) var(--espacio-lg);
+  border-radius: var(--radio-borde);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.botonAgregar:hover:not(:disabled) {
+  background-color: var(--color-ocre-suave);
+}
+
+.botonAgregar:disabled {
+  background-color: var(--color-borde);
+  cursor: not-allowed;
+}
+
+@media (max-width: 700px) {
+  .detalle {
+    grid-template-columns: 1fr;
+  }
+}

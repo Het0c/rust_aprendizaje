@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+  index.html
+  ------------------------------------------------------------------
+  Este es el ÚNICO archivo HTML de toda la aplicación (por eso decimos
+  que React crea una "SPA": Single Page Application, o "aplicación de
+  una sola página"). Tauri abre una ventana nativa y esa ventana carga
+  este HTML, tal como lo haría un navegador normal.
+
+  El <div id="root"> de abajo está vacío a propósito: React lo va a
+  llenar dinámicamente con nuestros componentes usando JavaScript.
+  A esto se le llama "renderizado del lado del cliente".
+-->
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moda Local — Tienda de Barrio</title>
+  </head>
+  <body>
+    <!-- React "monta" toda la aplicación dentro de este contenedor. -->
+    <div id="root"></div>
+
+    <!--
+      Este script carga nuestro punto de entrada de React (main.tsx).
+      type="module" permite usar la sintaxis moderna de import/export.
+    -->
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

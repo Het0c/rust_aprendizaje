@@ -1,0 +1,11 @@
+# Dependencias de Node (se reinstalan con `npm install`)
+node_modules
+
+# Carpeta de salida de Vite (se regenera con `npm run build`)
+dist
+
+# Carpeta de compilación de Rust (se regenera al compilar)
+src-tauri/target
+
+# Archivos de sistema operativo
+.DS_Store

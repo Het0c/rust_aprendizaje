@@ -1,0 +1,18 @@
+.contenedorBusqueda {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-xs);
+  background-color: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-borde);
+  padding: var(--espacio-xs) var(--espacio-sm);
+}
+
+.input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 0.95rem;
+  width: 100%;
+  color: var(--color-texto);
+}

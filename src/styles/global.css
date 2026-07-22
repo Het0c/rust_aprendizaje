@@ -1,0 +1,87 @@
+/* =============================================================================
+   global.css
+   -----------------------------------------------------------------------------
+   Estilos GLOBALES: aplican a toda la aplicación (no son de un componente
+   específico). Aquí hacemos un "reset" básico y definimos la tipografía base.
+
+   Este archivo se importa UNA sola vez, en main.tsx.
+   Los estilos de cada componente viven en su propio archivo .module.css
+   (CSS Modules), para que no choquen entre sí. Más detalles en Header.module.css.
+   ========================================================================== */
+
+@import "./variables.css";
+
+/* El "reset" quita los márgenes y paddings por defecto que cada navegador
+   aplica de forma distinta, para partir todos desde el mismo punto. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* El padding y el borde se incluyen en el ancho total */
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: var(--fuente-texto);
+  line-height: 1.5;
+
+  /* Textura sutil de "papel" usando un patrón repetido, muy discreto. */
+  background-image: radial-gradient(
+    rgba(36, 31, 22, 0.035) 1px,
+    transparent 1px
+  );
+  background-size: 14px 14px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--fuente-titulos);
+  color: var(--color-verde-bosque);
+  line-height: 1.2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+/* -----------------------------------------------------------------------
+   Clase reutilizable de "costura": una línea punteada que evoca la
+   costura de una prenda de ropa. La usamos como divisor decorativo en
+   varias partes de la app (Header, Banner, Footer) para reforzar la
+   identidad visual de una tienda de ropa.
+   ----------------------------------------------------------------------- */
+.linea-costura {
+  border: none;
+  border-top: 2px dashed var(--color-ocre);
+  opacity: 0.6;
+}
+
+/* Contenedor centrado reutilizable para limitar el ancho del contenido. */
+.contenedor {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 var(--espacio-lg);
+}

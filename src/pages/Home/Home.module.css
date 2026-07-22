@@ -1,0 +1,95 @@
+.banner {
+  background-color: var(--color-verde-bosque);
+  color: var(--color-superficie);
+  padding: var(--espacio-xl) 0;
+  margin-bottom: var(--espacio-lg);
+  border-bottom: 3px dashed var(--color-ocre);
+}
+
+.etiquetaBanner {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--color-ocre-suave);
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.tituloBanner {
+  color: var(--color-superficie);
+  font-size: 2.4rem;
+  margin: var(--espacio-xs) 0;
+}
+
+.descripcionBanner {
+  max-width: 60ch;
+  color: #e4dcc5;
+}
+
+.seccion {
+  margin-bottom: var(--espacio-xl);
+}
+
+.seccion h2 {
+  margin-bottom: var(--espacio-xs);
+}
+
+.seccion .linea-costura,
+.seccion hr {
+  margin-bottom: var(--espacio-md);
+}
+
+.grillaCategorias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: var(--espacio-md);
+}
+
+.grillaProductos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--espacio-md);
+}
+
+.textoExplicativo {
+  color: var(--color-texto-suave);
+  max-width: 70ch;
+  margin-bottom: var(--espacio-md);
+}
+
+.textoExplicativo code {
+  background-color: var(--color-borde);
+  padding: 0 4px;
+  border-radius: 3px;
+}
+
+.demoRust {
+  display: flex;
+  gap: var(--espacio-sm);
+  max-width: 480px;
+}
+
+.inputDemo {
+  flex: 1;
+  padding: var(--espacio-xs) var(--espacio-sm);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-borde);
+}
+
+.botonDemo {
+  background-color: var(--color-ocre);
+  padding: var(--espacio-xs) var(--espacio-md);
+  border-radius: var(--radio-borde);
+  font-weight: 700;
+}
+
+.botonDemo:hover {
+  background-color: var(--color-ocre-suave);
+}
+
+.respuestaRust {
+  margin-top: var(--espacio-sm);
+  background-color: var(--color-superficie);
+  border: 1px dashed var(--color-ocre);
+  border-radius: var(--radio-borde);
+  padding: var(--espacio-sm);
+}

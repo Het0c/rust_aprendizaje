@@ -1,0 +1,76 @@
+.tarjeta {
+  background-color: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-borde);
+  overflow: hidden;
+  box-shadow: var(--sombra-suave);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--sombra-media);
+}
+
+.imagen {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-bottom: 2px dashed var(--color-ocre);
+}
+
+.info {
+  padding: var(--espacio-sm) var(--espacio-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-xs);
+  flex: 1;
+}
+
+.nombre {
+  font-size: 1.05rem;
+}
+
+.precio {
+  color: var(--color-ocre);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.acciones {
+  margin-top: auto;
+  display: flex;
+  gap: var(--espacio-xs);
+  padding-top: var(--espacio-sm);
+}
+
+.botonVerMas {
+  flex: 1;
+  text-align: center;
+  padding: var(--espacio-xs) var(--espacio-sm);
+  border: 1px solid var(--color-verde-bosque);
+  color: var(--color-verde-bosque);
+  border-radius: var(--radio-borde);
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+
+.botonVerMas:hover {
+  background-color: var(--color-verde-bosque);
+  color: var(--color-superficie);
+}
+
+.botonAgregar {
+  background-color: var(--color-ocre);
+  color: var(--color-texto);
+  border-radius: var(--radio-borde);
+  padding: var(--espacio-xs) var(--espacio-sm);
+  font-weight: 700;
+  font-size: 0.88rem;
+}
+
+.botonAgregar:hover {
+  background-color: var(--color-ocre-suave);
+}

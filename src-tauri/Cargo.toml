@@ -1,0 +1,39 @@
+# =============================================================================
+# Cargo.toml
+# -----------------------------------------------------------------------------
+# Este es el "package.json" del mundo Rust. Define el nombre del proyecto,
+# su versión, y qué "crates" (librerías de Rust) necesitamos.
+#
+# ¿Por qué existe Rust aquí si toda la app es React?
+# Tauri funciona así: la INTERFAZ (lo que se ve) la hace React/HTML/CSS,
+# pero la VENTANA NATIVA, el acceso al sistema operativo (archivos, menús,
+# notificaciones, etc.) y el "motor" de la aplicación los maneja Rust.
+# Rust es mucho más liviano y seguro que empaquetar un navegador completo
+# (como hacen otras tecnologías, ej: Electron).
+# =============================================================================
+
+[package]
+name = "tienda-moda-local"
+version = "0.1.0"
+description = "Aplicación de ejemplo: tienda de ropa local, hecha con Tauri + React"
+authors = ["Tú :)"]
+edition = "2021"
+
+# Esto le dice a Rust dónde está el archivo que arma la librería de Tauri.
+[lib]
+name = "tienda_moda_local_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+# build.rs se ejecuta ANTES de compilar, y genera código necesario para Tauri
+# (por ejemplo, registrar los íconos de la app, permisos, etc.)
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+# El "crate" principal de Tauri: crea la ventana, el puente con React, etc.
+tauri = { version = "2", features = [] }
+
+# serde y serde_json nos permiten convertir datos de Rust <-> JSON,
+# que es el formato que usamos para "hablar" con React.
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"

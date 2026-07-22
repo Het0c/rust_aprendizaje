@@ -1,0 +1,27 @@
+{
+  "name": "tienda-moda-local",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "//": "Este archivo describe el proyecto FRONTEND (la parte web hecha con React). Tauri lo lee para saber cómo construir la interfaz antes de empaquetarla dentro de la app de escritorio.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.0",
+    "@tauri-apps/api": "^2.0.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.0.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.1"
+  }
+}
